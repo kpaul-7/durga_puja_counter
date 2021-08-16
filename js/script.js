@@ -20,6 +20,7 @@ document
   .addEventListener("click", function () {
     scheduler.classList.remove("mobile_schedule_open");
   });
+
 document.querySelector("#audio").play();
 document.querySelector("#mute").addEventListener("click", function () {
   document.querySelector("#mute").style.display = "none";
