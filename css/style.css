@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", sans-serif;
+}
+body {
+  margin-top: 1em;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.navbar {
+  display: none;
+}
+.mobile_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.open {
+  display: block;
+}
+.close {
+  display: none;
+}
+.nav_menu_open {
+  display: block;
+}
+.navbar {
+  background-color: #444444;
+  position: fixed;
+  top: 9vh;
+  min-height: 12em;
+  border-radius: 0 12px 12px 0;
+}
+.mobile_nav_close_div,
+.mobile_schedule_close_div {
+  text-align: right;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.navbar ul {
+  list-style-type: none;
+}
+.navbar ul a {
+  display: block;
+  text-decoration: none;
+  color: #ededed;
+  padding: 0.5em 1em;
+}
+.img_div {
+  position: Relative;
+  width: 90vw;
+  height: 30vh;
+  margin: auto;
+  margin-top: 2em;
+  display: flex;
+  border-radius: 12px;
+  justify-content: center;
+  background-image: url("/img/1.jpeg");
+  background-size: auto 100%;
+  animation: changepic 10s infinite;
+}
+.sound-control {
+  position: absolute;
+  font-size: 3em;
+  color: white;
+  bottom: 0;
+  left: 1em;
+}
+#play {
+  display: none;
+}
+.sound-control i {
+  display: block;
+  margin-left: -0.4em;
+  margin-bottom: 0.2em;
+}
+.sound-control i:hover {
+  cursor: pointer;
+}
+@keyframes changepic {
+  33% {
+    background-image: url("/img/2.jpg");
+  }
+  66% {
+    background-image: url("/img/3.jpg");
+  }
+  99% {
+    background-image: url("/img/1.jpeg");
+  }
+}
+.img_div img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: 15px;
+  /* margin-left: 1em; */
+}
+.icon img {
+  height: 2.6em;
+}
+.counter_div {
+  text-align: center;
+  margin-top: 2em;
+  color: #ff7600;
+  min-height: 11em;
+}
+.schedule {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  top: 20vh;
+  right: 0;
+  background-color: #da0037;
+  color: #ededed;
+  padding: 0 1em 2em 1em;
+  border-radius: 12px 0 0 12px;
+}
+.mobile_schedule {
+  position: fixed;
+  top: 30vh;
+  right: 0;
+  background-color: #da0037;
+  color: #ededed;
+  padding: 0.5em 1em;
+  border-radius: 12px 0 0 12px;
+}
+.mobile_schedule_open {
+  display: block;
+}
+.footer_div {
+  margin-top: 1em;
+  padding-bottom: 1em;
+  padding-top: 2em;
+  background-color: #da0037;
+  color: #ededed;
+  border-radius: 15px 15px 0 0;
+}
+.footer_div ul {
+  list-style: none;
+}
+.footer_div a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 0.1em 1em;
+}
+.footer_div a::before {
+  display: inline-block;
+  content: " ";
+  margin-right: 0.5em;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: #ededed;
+}
+.footer_div h2 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.copyright {
+  margin-top: 1em;
+  text-align: center;
+}
+/* 500px */
+@media only screen and (min-width: 500px) {
+  .img_div {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 720px) {
+  body {
+    margin-top: 2em;
+  }
+  .icon img {
+    height: 3em;
+  }
+  .container {
+    width: 70%;
+  }
+  .sound-control {
+    font-size: 4em;
+  }
+  .navbar_div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: -4em;
+  }
+  #mobile_nav_open {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    background-color: inherit;
+  }
+  .mobile_nav_close_div {
+    display: none;
+  }
+  .navbar {
+    position: relative;
+    border-radius: 0 12px 12px 0;
+  }
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  .navbar ul a {
+    display: inline-block;
+    color: #da0037;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-left: 2em;
+  }
+  .navbar ul a:hover {
+    border-bottom: 1px solid #da0037;
+  }
+  .img_div {
+    margin-top: -1em;
+    max-width: 720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+  }
+  .counter_div h2 {
+    font-size: 2em;
+  }
+  .schedule {
+    display: block;
+    padding: 2em 4em;
+    transform: translateX(90%);
+    transition: all 0.7s;
+  }
+  .schedule:hover {
+    cursor: pointer;
+    transform: translateX(0);
+  }
+  .schedule p {
+    font-size: 1.3em;
+  }
+  #mobile_schedule_close {
+    display: none;
+  }
+  .mobile_schedule {
+    display: none;
+  }
+
+  .footer_div {
+    margin-top: 4em;
+    border-radius: 45px 45px 0 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+  }
+  .footer a {
+    margin-top: 0.4em;
+  }
+  .copyright {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.2em;
+  }
+}

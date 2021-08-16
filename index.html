@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Durga Puja counter | 2021</title>
+  </head>
+  <body>
+    <div>
+      <div class="navbar_div">
+        <div class="container mobile_nav">
+          <div class="icon">
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              ><img src="./img/logo.svg" alt="logo"
+            /></a>
+          </div>
+          <img
+            src="./img/nav-open.svg"
+            alt="nav open icon for mobile"
+            id="mobile_nav_open"
+            onclick="navopen()"
+          />
+        </div>
+        <div class="navbar">
+          <div class="mobile_nav_close_div">
+            <img
+              src="./img/cross.svg"
+              alt="nav close icon for mobile"
+              id="mobile_nav_close"
+              onclick="navClose()"
+            />
+          </div>
+          <ul>
+            <li>
+              <a
+                href="https://weatherforecastindia.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Weather App</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://kpaul-7.github.io/portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >About me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <audio src="./audio/dhak.mp3" loop id="audio"></audio>
+      </div>
+      <div class="hero">
+        <div class="img_div">
+          <div class="sound-control">
+            <i class="fas fa-volume-mute" id="mute"></i>
+            <i class="fas fa-volume-up" id="play"></i>
+          </div>
+        </div>
+        <div class="counter_div container">
+          <h2 class="counter_div_text">মা আসছেন ।</h2>
+          <h2>অপেক্ষার মাত্র :</h2>
+          <h2 class="counter_h2"></h2>
+        </div>
+      </div>
+      <div class="schedule">
+        <div class="mobile_schedule_close_div">
+          <img
+            src="./img/cross.svg"
+            alt="schedule close icon for mobile"
+            id="mobile_schedule_close"
+          />
+        </div>
+        <h2>Durga Puja 2021 :</h2>
+        <p><span>Mahalaya : </span>06/10/21</p>
+        <p><span>Maha Panchami : </span>10/10/21</p>
+        <p><span>Maha Sashti : </span>11/10/21</p>
+        <p><span>Maha Saptami : </span>12/10/21</p>
+        <p><span>Maha Ashtami : </span>13/10/21</p>
+        <p><span>Maha Navami : </span>14/10/21</p>
+        <p><span>Vijaya Dashami : </span>15/10/21</p>
+      </div>
+      <div class="mobile_schedule">
+        <p>S <br />C<br />H<br />E<br />D<br />U<br />L<br />E</p>
+      </div>
+      <div class="footer_div">
+        <div class="container footer">
+          <div>
+            <h2>Contact me :</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://twitter.com/K_paul7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://kpaul-7.github.io/portfolio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Portfolio</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Usefull link :</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://weatherforecastindia.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Weather Checker App</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <h3>&copy; Koushik Paul | 2021</h3>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
