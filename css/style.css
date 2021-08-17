@@ -26,11 +26,12 @@ body {
 }
 .nav_menu_open {
   display: block;
+  z-index: 15;
 }
 .navbar {
   background-color: #444444;
   position: fixed;
-  top: 9vh;
+  top: 8vh;
   min-height: 12em;
   border-radius: 0 12px 12px 0;
 }

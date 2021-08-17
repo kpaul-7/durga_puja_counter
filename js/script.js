@@ -21,16 +21,15 @@ document
     scheduler.classList.remove("mobile_schedule_open");
   });
 
-document.querySelector("#audio").play();
 document.querySelector("#mute").addEventListener("click", function () {
   document.querySelector("#mute").style.display = "none";
   document.querySelector("#play").style.display = "block";
-  document.querySelector("#audio").pause();
+  document.querySelector("#audio").play();
 });
 document.querySelector("#play").addEventListener("click", function () {
   document.querySelector("#play").style.display = "none";
   document.querySelector("#mute").style.display = "block";
-  document.querySelector("#audio").play();
+  document.querySelector("#audio").pause();
 });
 calculatetime = () => {
   var pujoDate = new Date("10/11/2021");
