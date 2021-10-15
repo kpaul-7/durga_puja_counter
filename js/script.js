@@ -32,7 +32,7 @@ document.querySelector("#play").addEventListener("click", function () {
   document.querySelector("#audio").pause();
 });
 calculatetime = () => {
-  var pujoDate = new Date("10/11/2021");
+  var pujoDate = new Date("11/01/2022");
   var date2 = new Date();
   var diff = pujoDate.getTime() - date2.getTime();
   const totalseconds = Math.round(diff / 1000);
