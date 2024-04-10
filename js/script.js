@@ -2,6 +2,7 @@ var navopenicon = document.querySelector("#mobile_nav_open");
 var navbar = document.querySelector(".navbar");
 var counter_h2 = document.querySelector(".counter_h2");
 var scheduler = document.querySelector(".schedule");
+const slideShowImg = document.querySelector("#slide-show")
 function navopen() {
   navopenicon.classList.add("close");
   navbar.classList.add("nav_menu_open");
@@ -59,4 +60,18 @@ calculatetime = () => {
     calculatetime();
   }, 1000);
 };
+/* image changer */
+const images = ["./img/1.jpeg","./img/2.jpg","./img/3.jpg","./img/4.jpg","./img/5.jpg"]
+let idx = 0
+const changeImage = () => {
+  slideShowImg.src = images[idx]
+  idx+=1
+  if(idx >= images.length){
+    idx = 0
+  }
+  setTimeout(()=>{
+    changeImage()
+  },1200)
+}
 calculatetime();
+changeImage()

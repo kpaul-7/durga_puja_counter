@@ -94,7 +94,7 @@ body {
 .counter_div {
   text-align: center;
   margin-top: 2em;
-  color: #ff7600;
+  color: #da0037;
   min-height: 11em;
 }
 .schedule {
@@ -157,9 +157,9 @@ body {
 }
 /* 500px */
 @media only screen and (min-width: 500px) {
-  .img_div {
+  /* .img_div {
     max-width: 500px;
-  }
+  } */
 }
 @media only screen and (min-width: 720px) {
   body {
@@ -209,11 +209,16 @@ body {
     border-bottom: 1px solid #da0037;
   }
   .img_div {
-    margin-top: -1em;
-    max-width: 720px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
+    width: 70%;
+    margin: -1em auto;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    height: 60vh;
+  }
+  .img_div img{
+    width: 100%;
+    object-fit: cover;
+    object-position: 10% 20%;
   }
   .counter_div h2 {
     font-size: 2em;
