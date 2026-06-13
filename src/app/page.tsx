@@ -17,12 +17,13 @@ export default function Home() {
   const pujoDate = new Date("2026-10-17T00:00:00").getTime();
 
   // Array of background images
+  const basePath = "/durga_puja_counter";
   const images = [
-    "/img/1.jpeg",
-    "/img/2.jpg",
-    "/img/3.jpg",
-    "/img/4.jpg",
-    "/img/5.jpg",
+    `${basePath}/img/1.jpeg`,
+    `${basePath}/img/2.jpg`,
+    `${basePath}/img/3.jpg`,
+    `${basePath}/img/4.jpg`,
+    `${basePath}/img/5.jpg`,
   ];
 
   // Countdown Logic
@@ -123,7 +124,7 @@ export default function Home() {
       </div>
 
       {/* Hidden Audio Element */}
-      <audio ref={audioRef} src="/audio/dhak.mp3" loop />
+      <audio ref={audioRef} src={`${basePath}/audio/dhak.mp3`} loop />
 
       {/* Navbar Area */}
       <nav className="fixed top-0 w-full flex justify-between items-center p-6 lg:px-12 backdrop-blur-md bg-slate-950/50 z-50 border-b border-white/5 shadow-lg">
@@ -219,7 +220,7 @@ export default function Home() {
 
           <div className="relative group rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)] border border-white/10">
             <img
-              src="/img/1.jpeg"
+              src={`${basePath}/img/1.jpeg`}
               alt="Durga Idol"
               className="w-full h-[500px] object-cover transform group-hover:scale-105 transition duration-[1500ms]"
             />
